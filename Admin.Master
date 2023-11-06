@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="CvEntityProje.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        </head>
+        <body>
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Default.Aspx">Cv Sitesi</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="İstatistik.Aspx">İstatistikler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Deneyimler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Yetenekler.Aspx">Yeteneklerim</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="İletisim.Aspx" >İletişim</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link</a></li>
+                                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    <div class="container-fluid mt-3">
+                    </div>
+
+                </asp:ContentPlaceHolder>
+            </div>
+    </form>
+</body>
+</html>
